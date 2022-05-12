@@ -1,3 +1,11 @@
 function makeDiagonalRed(table) {
-  // ваш код...
+
+  const rows = Array.from(table.rows);
+
+  rows.forEach((row, i) => {
+    if (i < row.cells.length) {
+      row.cells[i].style.background = 'red';
+    }
+  });
+
 }
